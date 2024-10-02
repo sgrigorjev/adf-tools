@@ -1,5 +1,5 @@
 {
-  "name": "damienharper/adf-tools",
+  "name": "sgrigorjev/adf-tools",
   "description": "Atlassian Document Format PHP Tools",
   "minimum-stability": "stable",
   "keywords": ["atlassian", "adf"],
@@ -8,6 +8,10 @@
     {
       "name": "Damien Harper",
       "email": "damien.harper@gmail.com"
+    },
+    {
+      "name": "Sergey Grigorjev",
+      "email": "sergey.grigoriev.web@gmail.com"
     }
   ],
   "require": {
