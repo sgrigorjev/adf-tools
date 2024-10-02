@@ -141,6 +141,11 @@ abstract class Node implements JsonSerializable
         return $node;
     }
 
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
     protected function attrs(): array
     {
         return [];
