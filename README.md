@@ -71,7 +71,7 @@ if (some condition) {
 $document = (new Document())->append($paragraph);
 ```
 
-### Direct node append
+### Extension node
 
 Although element `Extension` is not described in [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure/), in practice it is used in documents for the Confluence. One of the most famous extensions is, for example, the **Table of Contents**.
 
