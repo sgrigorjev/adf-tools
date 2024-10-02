@@ -25,6 +25,7 @@ use DH\Adf\Exporter\Html\Child\TableHeaderExporter;
 use DH\Adf\Exporter\Html\Child\TableRowExporter;
 use DH\Adf\Exporter\Html\Inline\DateExporter;
 use DH\Adf\Exporter\Html\Inline\EmojiExporter;
+use DH\Adf\Exporter\Html\Inline\ExtensionExporter;
 use DH\Adf\Exporter\Html\Inline\HardbreakExporter;
 use DH\Adf\Exporter\Html\Inline\InlineCardExporter;
 use DH\Adf\Exporter\Html\Inline\MentionExporter;
@@ -59,6 +60,7 @@ use DH\Adf\Node\Child\TableHeader;
 use DH\Adf\Node\Child\TableRow;
 use DH\Adf\Node\Inline\Date;
 use DH\Adf\Node\Inline\Emoji;
+use DH\Adf\Node\Inline\Extension;
 use DH\Adf\Node\Inline\Hardbreak;
 use DH\Adf\Node\Inline\InlineCard;
 use DH\Adf\Node\Inline\Mention;
@@ -103,6 +105,7 @@ abstract class HtmlExporter implements ExporterInterface
 
         // inline nodes
         Emoji::class => EmojiExporter::class,
+        Extension::class => ExtensionExporter::class,
         Hardbreak::class => HardbreakExporter::class,
         Mention::class => MentionExporter::class,
         Text::class => TextExporter::class,

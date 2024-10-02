@@ -8,6 +8,7 @@ use DH\Adf\Builder\BlockquoteBuilder;
 use DH\Adf\Builder\BulletListBuilder;
 use DH\Adf\Builder\CodeblockBuilder;
 use DH\Adf\Builder\ExpandBuilder;
+use DH\Adf\Builder\ExtensionBuilder;
 use DH\Adf\Builder\HeadingBuilder;
 use DH\Adf\Builder\MediaGroupBuilder;
 use DH\Adf\Builder\MediaSingleBuilder;
@@ -17,6 +18,7 @@ use DH\Adf\Builder\ParagraphBuilder;
 use DH\Adf\Builder\RuleBuilder;
 use DH\Adf\Builder\TableBuilder;
 use DH\Adf\Node\BlockNode;
+use DH\Adf\Node\Inline\Extension;
 use JsonSerializable;
 
 /**
@@ -27,6 +29,7 @@ class Document extends BlockNode implements JsonSerializable
     use BlockquoteBuilder;
     use BulletListBuilder;
     use CodeblockBuilder;
+    use ExtensionBuilder;
     use HeadingBuilder;
     use MediaGroupBuilder;
     use MediaSingleBuilder;
@@ -42,6 +45,7 @@ class Document extends BlockNode implements JsonSerializable
         Blockquote::class,
         BulletList::class,
         CodeBlock::class,
+        Extension::class,
         Heading::class,
         MediaGroup::class,
         MediaSingle::class,
